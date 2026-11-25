@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare | Doctor Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">✚ MediCare</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <a href="#appointment" class="nav-btn">Book Appointment</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">YOUR HEALTH, OUR PRIORITY</span>
+        <h1>Quality Healthcare<br>Made <span>Simple.</span></h1>
+        <p>Find trusted doctors, book appointments easily,
+        and take the first step towards a healthier life.</p>
+        <a href="#appointment" class="primary-btn">Book an Appointment →</a>
+        <div class="stats">
+            <div><h2>50+</h2><p>Expert Doctors</p></div>
+            <div><h2>10k+</h2><p>Happy Patients</p></div>
+            <div><h2>15+</h2><p>Specialities</p></div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=700"
+        alt="Doctor">
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="section-heading">
+        <span class="tag">OUR SERVICES</span>
+        <h2>Healthcare For Everyone</h2>
+        <p>Professional medical care for your every need.</p>
+    </div>
+    <div class="service-grid">
+        <div class="service-card"><div>❤️</div><h3>Cardiology</h3><p>Heart health and cardiac care.</p></div>
+        <div class="service-card"><div>🦷</div><h3>Dentistry</h3><p>Complete dental healthcare.</p></div>
+        <div class="service-card"><div>🧠</div><h3>Neurology</h3><p>Expert nervous system care.</p></div>
+        <div class="service-card"><div>🩺</div><h3>General Medicine</h3><p>Everyday health consultations.</p></div>
+    </div>
+</section>
+
+<section class="section doctors-section" id="doctors">
+    <div class="section-heading">
+        <span class="tag">MEET OUR EXPERTS</span>
+        <h2>Our Experienced Doctors</h2>
+        <p>Connect with our healthcare professionals.</p>
+    </div>
+    <div class="doctor-grid">
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400" alt="Doctor">
+            <h3>Dr. Rahul Sharma</h3>
+            <p>Cardiologist</p>
+            <button onclick="selectDoctor('Dr. Suvaash Yadav')">Book Now</button>
+        </div>
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400" alt="Doctor">
+            <h3>Dr. Priya Mehta</h3>
+            <p>Dentist</p>
+            <button onclick="selectDoctor('Dr. Priya Mehta')">Book Now</button>
+        </div>
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400" alt="Doctor">
+            <h3>Dr. Arjun Rao</h3>
+            <p>Neurologist</p>
+            <button onclick="selectDoctor('Dr. Arjun Rao')">Book Now</button>
+        </div>
+    </div>
+</section>
+
+<section class="appointment-section" id="appointment">
+    <div class="section-heading">
+        <span class="tag">ONLINE BOOKING</span>
+        <h2>Book Your Appointment</h2>
+        <p>Fill in your details to request an appointment.</p>
+    </div>
+    <form id="bookingForm">
+        <input type="text" id="patientName" placeholder="Patient Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <select id="doctor" required>
+            <option value="">Select Doctor</option>
+            <option>Dr. Rahul Sharma</option>
+            <option>Dr. Priya Mehta</option>
+            <option>Dr. Arjun Rao</option>
+        </select>
+        <input type="date" id="date" required>
+        <select id="time" required>
+            <option value="">Select Time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>02:00 PM</option>
+            <option>04:00 PM</option>
+        </select>
+        <button type="submit" class="primary-btn">Confirm Appointment</button>
+    </form>
+    <p id="message"></p>
+</section>
+
+<section class="about-section" id="about">
+    <div>
+        <span class="tag">ABOUT MEDICARE</span>
+        <h2>Your Health Deserves The Best Care</h2>
+        <p>We aim to make healthcare accessible and convenient
+        through trusted medical professionals and easy appointment booking.</p>
+    </div>
+    <div class="about-highlight">
+        <h2>24/7</h2>
+        <p>Online Appointment Requests</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>✚ MediCare</h2>
+    <p>Your health, our responsibility.</p>
+    <p>Email: contact@medicare.example | Phone: +91 98765 43210</p>
+    <p>© 2026 MediCare. Demo Website.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
